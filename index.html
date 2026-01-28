@@ -1,0 +1,886 @@
+<!doctype html>
+<html lang="ua">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Dialogue - Мовний центр</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-wrapper">
+          <div class="header-logo">
+            <a href="index.html" class="header-logo-link">
+              <img
+                src="assets/images/logotip.png"
+                alt="Dialogue - Мовний центр"
+                class="header-logo-img"
+              />
+            </a>
+          </div>
+          <nav class="header-nav">
+            <ul class="header-nav-list">
+              <li class="header-nav-item">
+                <a href="#lang" class="header-nav-link">Мови</a>
+              </li>
+              <li class="header-nav-item">
+                <a href="#price" class="header-nav-link">Ціни</a>
+              </li>
+              <li class="header-nav-item">
+                <a href="#methods" class="header-nav-link">Методика</a>
+              </li>
+              <li class="header-nav-item">
+                <a href="#reviews" class="header-nav-link">Відгуки</a>
+              </li>
+              <li class="header-nav-item">
+                <a href="#about" class="header-nav-link">Про нас</a>
+              </li>
+              <!-- <li class="header-nav-item">
+                <a href="#gallery" class="header-nav-link">Галерея</a>
+              </li> -->
+            </ul>
+            <!-- Бургер-меню для мобильных устройств -->
+            <div class="header-burger" id="burger-menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-wrapper">
+          <div class="info-wrapper">
+            <span>Dialogue - language center</span>
+            <h1 class="hero-title">
+              Ваш шлях до вільного спілкування з найкращими викладачами.
+            </h1>
+            <p class="hero-text">
+              Вивчай іноземні мови з задоволенням разом з Dialogue!
+            </p>
+            <button class="btn" id="open-modal">Записатися на курс</button>
+          </div>
+          <div class="hero-img">
+            <img
+              src="assets/images/hero-main.svg"
+              alt="Школа іноземних мов Dialogue"
+            />
+          </div>
+        </div>
+
+        <!-- Modal window -->
+        <div class="modal-overlay" id="modal-overlay">
+          <div class="modal">
+            <button class="modal-close" id="close-modal">&times;</button>
+            <h2>Записатися на курс</h2>
+            <form class="modal-form">
+              <label for="name">Ім'я:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                placeholder="Ваше ім'я"
+              />
+
+              <label for="phone">Номер телефону:</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                required
+                placeholder="Ваш номер телефону"
+              />
+
+              <button type="submit" class="submit-btn">Відправити</button>
+            </form>
+          </div>
+        </div>
+        <!-- End Modal window -->
+      </section>
+
+      <section class="lang" id="lang">
+        <div class="container">
+          <h2 class="section-title">Вивчайте мови — відкривайте світ!</h2>
+          <p class="section-desc">
+            З нами ви здобудете знання та нові знайомства!
+          </p>
+          <div class="lang-wrapper">
+            <a href="english.html" class="course-card">
+              <div class="course-header">
+                <img
+                  src="assets/images/gb.png"
+                  alt="Gb Flag"
+                  class="course-flag"
+                />
+                <h2 class="course-title">Англійська</h2>
+              </div>
+              <div class="course-details">
+                <p>Групові заняття</p>
+                <p>Заняття в міні-групах</p>
+                <p>Індивідуальні заняття</p>
+                <p>Skype заняття</p>
+                <p>Загальний, розмовний курс</p>
+                <p>Інтенсивний курс</p>
+                <p>Підготовка до іспиту IELTS та ЗНО</p>
+              </div>
+            </a>
+
+            <a href="german.html" class="course-card german-course">
+              <div class="course-header">
+                <img
+                  src="assets/images/german.png"
+                  alt="Gb Flag"
+                  class="course-flag"
+                />
+                <h2 class="course-title">Німецька</h2>
+              </div>
+              <div class="course-details">
+                <p>Заняття в міні-групах</p>
+                <p>Індивідуальні заняття</p>
+                <p>Skype заняття</p>
+                <p>Загальний, розмовний курс</p>
+                <p>Інтенсивний курс</p>
+                <p>Підготовка до міжнародного іспиту Goethe-Institut</p>
+              </div>
+            </a>
+
+            <a href="spain.html" class="course-card spain-course">
+              <div class="course-header">
+                <img
+                  src="assets/images/spain.png"
+                  alt="Gb Flag"
+                  class="course-flag"
+                />
+                <h2 class="course-title">Іспанська</h2>
+              </div>
+              <div class="course-details">
+                <p>Заняття в міні-групах</p>
+                <p>Індивідуальні заняття</p>
+                <p>Skype заняття</p>
+                <p>Загальний, розмовний курс</p>
+                <p>Інтенсивний курс</p>
+              </div>
+            </a>
+
+            <a href="france.html" class="course-card france-course">
+              <div class="course-header">
+                <img
+                  src="assets/images/france.png"
+                  alt="Gb Flag"
+                  class="course-flag"
+                />
+                <h2 class="course-title">Французька</h2>
+              </div>
+              <div class="course-details">
+                <p>Заняття в міні-групах</p>
+                <p>Індивідуальні заняття</p>
+                <p>Skype/Zoom заняття</p>
+                <p>Загальний, розмовний курс</p>
+                <p>Інтенсивний курс</p>
+              </div>
+            </a>
+
+            <a href="italy.html" class="course-card italy-course">
+              <div class="course-header">
+                <img
+                  src="assets/images/italy.png"
+                  alt="Gb Flag"
+                  class="course-flag"
+                />
+                <h2 class="course-title">Італійська</h2>
+              </div>
+              <div class="course-details">
+                <p>Заняття в міні-групах</p>
+                <p>Індивідуальні заняття</p>
+                <p>Skype заняття</p>
+                <p>Загальний, розмовний курс</p>
+                <p>Інтенсивний курс</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="price" id="price">
+        <div class="container">
+          <h2 class="section-title price-title">Наші ціни</h2>
+          <p class="section-desc price-desc">
+            Відкрито показуємо вартість занять, щоб ви могли планувати свій
+            бюджет
+          </p>
+
+          <div class="tabs-container">
+            <!-- Tabs -->
+            <div class="tabs">
+              <button class="tab-button active" data-tab="group">
+                Групові заняття
+              </button>
+              <button class="tab-button" data-tab="individual">
+                Індивідуальні заняття
+              </button>
+            </div>
+
+            <!-- Content for tabs -->
+            <div class="tab-content group active">
+              <div class="price-wrapper">
+                <div class="price-card">
+                  <h3>Група 5-7 учнів</h3>
+                  <p>1500₴</p>
+                  <p>в календарний місяць</p>
+                  <p class="lesson-count">8-9 занять</p>
+                  <p class="lesson-price">по 80 хв</p>
+                  <ul>
+                    <li><span class="check-icon">✔</span> Граматика</li>
+                    <li><span class="check-icon">✔</span> Ігри</li>
+                    <li><span class="check-icon">✔</span> Аудіо та Відео</li>
+                  </ul>
+                </div>
+
+                <div class="price-card">
+                  <h3>Міні-група 3-4 учні</h3>
+                  <p>2000-2250₴</p>
+                  <p>в календарний місяць</p>
+                  <p class="lesson-count">8-9 занять</p>
+                  <p class="lesson-price">по 60-80 хв</p>
+                  <ul>
+                    <li><span class="check-icon">✔</span> Граматика</li>
+                    <li><span class="check-icon">✔</span> Ігри</li>
+                    <li><span class="check-icon">✔</span> Аудіо та Відео</li>
+                  </ul>
+                </div>
+
+                <div class="price-card">
+                  <h3>Міні-група 2 учні</h3>
+                  <p>2400-2700₴</p>
+                  <p>в календарний місяць</p>
+                  <p class="lesson-count">8-9 занять</p>
+                  <p class="lesson-price">по 60 хв</p>
+                  <ul>
+                    <li><span class="check-icon">✔</span> Граматика</li>
+                    <li><span class="check-icon">✔</span> Ігри</li>
+                    <li><span class="check-icon">✔</span> Аудіо та Відео</li>
+                  </ul>
+                </div>
+
+                <div class="price-card">
+                  <h3>Підготовка до IELTS (2учні)</h3>
+                  <p>135-150€</p>
+                  <p>в календарний місяць</p>
+                  <p class="lesson-count">8-9 занять</p>
+                  <p class="lesson-price">по 50 хв</p>
+                  <ul>
+                    <li><span class="check-icon">✔</span> Граматика</li>
+                    <li><span class="check-icon">✔</span> Розмовні теми</li>
+                    <li><span class="check-icon">✔</span> Аудіо та Читання</li>
+                  </ul>
+                </div>
+
+                <div class="price-card">
+                  <h3>Туристичний курс 5-7 учнів</h3>
+                  <p>1500₴</p>
+                  <p>в календарний місяць</p>
+                  <p class="lesson-count">8-9 занять</p>
+                  <p class="lesson-price">по 80 хв</p>
+                  <ul>
+                    <li><span class="check-icon">✔</span> Ігри</li>
+                    <li><span class="check-icon">✔</span> Розмовні теми</li>
+                    <li><span class="check-icon">✔</span> Аудіо та Читання</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-content tab-wrapper individual">
+              <div class="price-wrapper">
+                <div class="price-card">
+                  <h3>Індивідуальне навчання</h3>
+                  <p>3600-4050₴</p>
+                  <p>в календарний місяць</p>
+                  <p class="lesson-count">8-9 занять</p>
+                  <p class="lesson-price">по 60 хв</p>
+                  <ul>
+                    <li><span class="check-icon">✔</span> Граматика</li>
+                    <li><span class="check-icon">✔</span> Ігри</li>
+                    <li><span class="check-icon">✔</span> Аудіо та Відео</li>
+                  </ul>
+                </div>
+                <div class="price-card">
+                  <h3>Інтенсивне навчання</h3>
+                  <p>4000-4500₴</p>
+                  <p>в календарний місяць</p>
+                  <p class="lesson-count">8-9 занять</p>
+                  <p class="lesson-price">по 60 хв</p>
+                  <ul>
+                    <li><span class="check-icon">✔</span> Граматика</li>
+                    <li><span class="check-icon">✔</span> Ігри</li>
+                    <li><span class="check-icon">✔</span> Аудіо та Відео</li>
+                  </ul>
+                </div>
+                <div class="price-card">
+                  <h3>Бізнес-курс</h3>
+                  <p>200-225€</p>
+                  <p>в календарний місяць</p>
+                  <p class="lesson-count">8-9 занять</p>
+                  <p class="lesson-price">по 50 хв</p>
+                  <ul>
+                    <li><span class="check-icon">✔</span> Граматика</li>
+                    <li>
+                      <span class="check-icon">✔</span> Бізнес термінологогія
+                    </li>
+                    <li><span class="check-icon">✔</span> Аудіо та Відео</li>
+                  </ul>
+                </div>
+                <div class="price-card">
+                  <h3>Підготовка до IELTS, CELPIP; Goethe-Institut</h3>
+                  <p>200-225€</p>
+                  <p>в календарний місяць</p>
+                  <p class="lesson-count">8-9 занять</p>
+                  <p class="lesson-price">по 50 хв</p>
+                  <ul>
+                    <li><span class="check-icon">✔</span> Розмовні теми</li>
+                    <li><span class="check-icon">✔</span> Письмо</li>
+                    <li><span class="check-icon">✔</span> Аудіо та Читання</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="methodology-section" id="methods">
+        <div class="container">
+          <div class="section-header">
+            <h1 class="method-title">
+              Наша <span class="highlight">методика</span>
+            </h1>
+            <p class="method-subtitle">
+              Спираючись на наш досвід, ми вважаємо, що для ефективного
+              оволодіння мови необхідні ці компоненти:
+            </p>
+          </div>
+
+          <div class="methodology-grid">
+            <!-- Card 1: Groups -->
+            <div class="method-card">
+              <div class="card-icon">
+                <svg
+                  viewBox="0 0 80 80"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="30" cy="25" r="12" fill="#FF4B4B" opacity="0.2" />
+                  <circle cx="30" cy="25" r="8" fill="#FF4B4B" />
+                  <circle cx="50" cy="25" r="12" fill="#FFD93D" opacity="0.2" />
+                  <circle cx="50" cy="25" r="8" fill="#FFD93D" />
+                  <path
+                    d="M15 55C15 48 21 43 30 43C39 43 45 48 45 55V60H15V55Z"
+                    fill="#FF4B4B"
+                    opacity="0.3"
+                  />
+                  <path
+                    d="M35 55C35 48 41 43 50 43C59 43 65 48 65 55V60H35V55Z"
+                    fill="#FFD93D"
+                    opacity="0.3"
+                  />
+                </svg>
+              </div>
+              <h3 class="card-title">Групи</h3>
+              <p class="card-description">
+                Комфортні групи до 7 учнів для максимальної уваги кожному
+                студенту
+              </p>
+            </div>
+
+            <!-- Card 2: Grammar -->
+            <div class="method-card">
+              <div class="card-icon">
+                <svg
+                  viewBox="0 0 80 80"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="15"
+                    y="20"
+                    width="50"
+                    height="40"
+                    rx="4"
+                    fill="#FF4B4B"
+                    opacity="0.2"
+                  />
+                  <text
+                    x="25"
+                    y="45"
+                    font-family="Arial, sans-serif"
+                    font-size="28"
+                    font-weight="bold"
+                    fill="#FF4B4B"
+                  >
+                    ABC
+                  </text>
+                  <line
+                    x1="20"
+                    y1="52"
+                    x2="60"
+                    y2="52"
+                    stroke="#FFD93D"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <h3 class="card-title">Граматика</h3>
+              <p class="card-description">
+                На пальцях — доступно та зрозуміло для всіх рівнів
+              </p>
+            </div>
+
+            <!-- Card 3: Audio/Video -->
+            <div class="method-card">
+              <div class="card-icon">
+                <svg
+                  viewBox="0 0 80 80"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="40" cy="40" r="28" fill="#FF4B4B" opacity="0.2" />
+                  <circle cx="40" cy="40" r="20" fill="#FFD93D" opacity="0.3" />
+                  <path d="M35 28L55 40L35 52V28Z" fill="#FF4B4B" />
+                </svg>
+              </div>
+              <h3 class="card-title">Аудіо та відео</h3>
+              <p class="card-description">
+                Прослуховування і обговорення автентичних матеріалів
+              </p>
+            </div>
+
+            <!-- Card 4: Teachers -->
+            <div class="method-card">
+              <div class="card-icon">
+                <svg
+                  viewBox="0 0 80 80"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="40" cy="28" r="15" fill="#FF4B4B" opacity="0.2" />
+                  <circle cx="40" cy="28" r="10" fill="#FF4B4B" />
+                  <path
+                    d="M20 60C20 50 28 45 40 45C52 45 60 50 60 60V68H20V60Z"
+                    fill="#FFD93D"
+                    opacity="0.3"
+                  />
+                  <rect x="35" y="55" width="10" height="3" fill="#FF4B4B" />
+                  <path
+                    d="M30 65L40 58L50 65"
+                    stroke="#FF4B4B"
+                    stroke-width="2"
+                    fill="none"
+                  />
+                </svg>
+              </div>
+              <h3 class="card-title">Викладачі</h3>
+              <p class="card-description">
+                Які спонукають до спілкування та створюють комфортну атмосферу
+              </p>
+            </div>
+
+            <!-- Card 5: Individual Approach -->
+            <div class="method-card">
+              <div class="card-icon">
+                <svg
+                  viewBox="0 0 80 80"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="40" cy="32" r="14" fill="#FFD93D" opacity="0.2" />
+                  <circle cx="40" cy="32" r="9" fill="#FFD93D" />
+                  <path
+                    d="M25 52C25 45 31 40 40 40C49 40 55 45 55 52V58H25V52Z"
+                    fill="#FF4B4B"
+                    opacity="0.2"
+                  />
+                  <circle cx="32" cy="64" r="4" fill="#FF4B4B" />
+                  <circle cx="40" cy="68" r="4" fill="#FFD93D" />
+                  <circle cx="48" cy="64" r="4" fill="#FF4B4B" />
+                </svg>
+              </div>
+              <h3 class="card-title">Індивідуальний підхід</h3>
+              <p class="card-description">
+                Окрема увага приділяється мовним аспектам за бажанням
+                індивідуальних учнів
+              </p>
+            </div>
+
+            <!-- Card 6: Games -->
+            <div class="method-card">
+              <div class="card-icon">
+                <svg
+                  viewBox="0 0 80 80"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="15"
+                    y="25"
+                    width="50"
+                    height="35"
+                    rx="6"
+                    fill="#FF4B4B"
+                    opacity="0.2"
+                  />
+                  <circle cx="28" cy="42" r="6" fill="#FFD93D" />
+                  <rect
+                    x="42"
+                    y="36"
+                    width="5"
+                    height="12"
+                    rx="2"
+                    fill="#FF4B4B"
+                  />
+                  <rect
+                    x="50"
+                    y="36"
+                    width="5"
+                    height="12"
+                    rx="2"
+                    fill="#FF4B4B"
+                  />
+                  <rect
+                    x="46"
+                    y="40"
+                    width="5"
+                    height="5"
+                    rx="2"
+                    fill="#FFD93D"
+                    transform="rotate(90 48.5 42.5)"
+                  />
+                </svg>
+              </div>
+              <h3 class="card-title">Ігри</h3>
+              <p class="card-description">
+                Залучають до розмови та роблять навчання цікавим
+              </p>
+            </div>
+          </div>
+
+          <div class="methods-button">
+            <button class="btn btn-method" id="open-modal-method">
+              Записатися на пробне заняття
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonial-section" id="reviews">
+        <div class="container">
+          <h2 class="section-title testimonial-title">
+            Що кажуть наші студенти
+          </h2>
+          <p class="section-desc testimonial-desc">
+            Неважливо, в якому місті ви живете: Запоріжжя, Київ, Торонто,
+            Тель-Авів - англійську по Skype і в стінах нашої школи вчать дорослі
+            і підлітки по всьому світу. Випускники і студенти «Dialogue»
+            поділилися історіями успіху.
+          </p>
+          <div class="testimonial-slider">
+            <div class="testimonial-track">
+              <div class="testimonial-card">
+                <img
+                  src="assets/images/max.webp"
+                  alt="Максим"
+                  class="testimonial-photo"
+                />
+                <h3>Максим</h3>
+                <p class="city">м. Запоріжжя</p>
+                <p class="text">
+                  Відмінна школа, прекрасні вчителі. Я бачу і відчуваю прогрес.
+                  Атмосфера дружня, уроки приємні!
+                </p>
+              </div>
+              <div class="testimonial-card">
+                <img
+                  src="assets/images/rev_1.webp"
+                  alt="Влада"
+                  class="testimonial-photo"
+                />
+                <h3>Влада</h3>
+                <p class="city">м. Запоріжжя</p>
+                <p class="text">
+                  Готувалась до IELTS з Ольгою Вальків. Здала на 7.5 всього за 2
+                  місяці!
+                </p>
+              </div>
+              <div class="testimonial-card">
+                <img
+                  src="assets/images/vlada.webp"
+                  alt="Соня"
+                  class="testimonial-photo"
+                />
+                <h3>Соня</h3>
+                <p class="city">м. Запоріжжя</p>
+                <p class="text">
+                  З першого уроку відчуваю прогрес! Уроки веселі, викладачі
+                  приємні. Найкращі котики чекають вас!
+                </p>
+              </div>
+
+              <div class="testimonial-card">
+                <img
+                  src="assets/images/vlada.webp"
+                  alt="Соня"
+                  class="testimonial-photo"
+                />
+                <h3>Ельдар</h3>
+                <p class="city">м. Запоріжжя</p>
+                <p class="text">
+                  Займаюся в мовному центрі "Діалог" з серпня 2018 року. Хочу
+                  висловити величезну подяку викладачеві Анастасії за
+                  професійний і індивідуальний підхід і всій команді за
+                  неймовірно крутий сервіс!
+                </p>
+              </div>
+              <div class="testimonial-card">
+                <img
+                  src="assets/images/vlada.webp"
+                  alt="Соня"
+                  class="testimonial-photo"
+                />
+                <h3>Олександра</h3>
+                <p class="city">м. Полтава</p>
+                <p class="text">
+                  Займаюся англійською в школі пів року, місяць тому здала
+                  пробний іспит, результат набагато краще ніж очікувала, але
+                  потрібен бал ще вище. До занять в школі Діалог з IELTS була
+                  взагалі не знайома. Вдячна за мої уроки, на них я зрозуміла що
+                  навчання буває дійсно веселим і цікавим
+                </p>
+              </div>
+              <div class="testimonial-card">
+                <img
+                  src="assets/images/vlada.webp"
+                  alt="Соня"
+                  class="testimonial-photo"
+                />
+                <h3>Ольга</h3>
+                <p class="city">м. Запоріжжя</p>
+                <p class="text">
+                  Найкращі Курси Англійської мови, які я коли-небудь
+                  відвідувала! Мені подобається, що Навчання проходить в ігровій
+                  дружній обстановці, я дізналася багато нового і це дуже цікаво
+                  !! дякую вам велике, процвітання вам !!!
+                </p>
+              </div>
+              <div class="testimonial-card">
+                <img
+                  src="assets/images/vlada.webp"
+                  alt="Соня"
+                  class="testimonial-photo"
+                />
+                <h3>Юлія</h3>
+                <p class="city">Ізраїль</p>
+                <p class="text">
+                  Уже два з половиною роки вчуся в школі dialogue і можу сказати
+                  з упевненістю що в цій школі кваліфіковані викладачі з гідними
+                  вимогами від учнів. Я приїхала жити до Ізраїлю не могла
+                  говорити навіть пару слів, зараз на роботі я спілкуюся
+                  виключно англійською і це заслуга моєї чудової викладачки
+                  Вікторії. Я буду продовжувати до рівня носія мови тому що
+                  англійська мова це дуже важливо особливо коли ти живеш за
+                  кордоном. Спасибі вам велике!
+                </p>
+              </div>
+              <div class="testimonial-card">
+                <img
+                  src="assets/images/vlada.webp"
+                  alt="Соня"
+                  class="testimonial-photo"
+                />
+                <h3>Дмитро</h3>
+                <p class="city">м. Запоріжжя</p>
+                <p class="text">
+                  Займаюся в Діалозі на рівні Pre-Intermediate. Через пів року
+                  значно покращилися знання, і говорити англійською стало
+                  простіше. Так само є Game club, з відмінною атмосферою.
+                  Improve your skills with Dialogue
+                </p>
+              </div>
+              <div class="testimonial-card">
+                <img
+                  src="assets/images/vlada.webp"
+                  alt="Соня"
+                  class="testimonial-photo"
+                />
+                <h3>Ірина</h3>
+                <p class="city">м. Запоріжжя</p>
+                <p class="text">
+                  Різні життєві ситуації змушують нас потрапляти в випадки, коли
+                  рішення потрібно приймати блискавично. І нехай говорять, що
+                  завжди і у всьому необхідно керуватися здоровим глуздом і бути
+                  вкрай холоднокровним ... слухатися чи ні - вибір за вами.
+                </p>
+              </div>
+              <div class="testimonial-card">
+                <img
+                  src="assets/images/vlada.webp"
+                  alt="Соня"
+                  class="testimonial-photo"
+                />
+                <h3>Анастасія</h3>
+                <p class="city">м. Запоріжжя</p>
+                <p class="text">
+                  Чудові курси! З першого уроку відчула прогрес! Приємні і
+                  грамотні викладачі, уроки проходять в ігровій формі, що завжди
+                  затишно і весело! Найкращі котики завжди чекають вас і
+                  наповнюють атмосферу теплом. Кожен урок незабутній. Рекомендую
+                  всім, хто хоче швидко вивчити іноземні мови або підняти свій
+                  рівень. У січні зайняла 5 місце на регіональній олімпіаді,
+                  притому що вчуся в зазвичай не спеціалізованій школі
+                </p>
+              </div>
+              <div class="testimonial-card">
+                <img
+                  src="assets/images/vlada.webp"
+                  alt="Соня"
+                  class="testimonial-photo"
+                />
+                <h3>Олексій</h3>
+                <p class="city">м. Запоріжжя</p>
+                <p class="text">
+                  Займаюся англійською індивідуально 2 рази на тиждень. Хочу
+                  відзначити високий рівень викладання, використання актуальних
+                  і сучасних методик і програм. Програми відповідають
+                  міжнародній класифікації CEFR. Також особливо хочу відзначити
+                  приємну, душевну атмосферу, яку створюють милі, симпатичні,
+                  приємні в спілкуванні, освітчені дівчата!
+                </p>
+              </div>
+            </div>
+            <div class="slider-dots">
+              <span class="dot active"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end review section -->
+
+      <!-- online-section -->
+      <section class="online-english-section" id="about">
+        <div class="container">
+          <div class="english-content">
+            <div class="text-block">
+              <h2 class="section-title">Вчимо англійську онлайн</h2>
+              <p class="section-desc">
+                У сучасному світі немає потреби рекламувати вивчення мов — ви
+                вже знаєте, що це важливо. Ми допоможемо вам отримати навички
+                спілкування, граматику та впевненість.
+              </p>
+              <ul class="benefits-list">
+                <li>💬 80% розмовної практики</li>
+                <li>🎯 Індивідуальний підхід до цілей</li>
+                <li>👩‍🏫 Сертифіковані викладачі</li>
+              </ul>
+            </div>
+            <div class="image-block">
+              <img src="assets/images/globe.png" alt="Онлайн навчання" />
+            </div>
+          </div>
+
+          <div class="stats-block">
+            <div class="stat-card">
+              <strong>2500+</strong><span>випускників</span>
+            </div>
+            <div class="stat-card">
+              <strong>300</strong><span>успішних IELTS</span>
+            </div>
+            <div class="stat-card">
+              <strong>73</strong><span>конференції</span>
+            </div>
+            <div class="stat-card">
+              <strong>300+</strong><span>покращили кар'єру</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- start map section -->
+      <section class="fullwidth-map-section">
+        <h2 class="map-title">Ми знаходимося тут</h2>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2677.962570371308!2d35.12107317663695!3d47.84031847121223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dc60ccd5f53827%3A0x1a41d307387c8984!2z0LHRg9C7LiDQnNCw0YDQuNC4INCf0YDQuNC80LDRh9C10L3QutC-LCAxMdCQLCDQl9Cw0L_QvtGA0L7QttGM0LUsINCX0LDQv9C-0YDQvtC20YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDY5MDAw!5e0!3m2!1sru!2sua!4v1769610056801!5m2!1sru!2sua"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+      <!-- end map section -->
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a class="logo-footer" href="index.html">
+            <img src="assets/images/logotip_white.png" alt="logo-white" />
+          </a>
+          <p>Центр вивчення мов у Запоріжжі</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/dialoguezp/" target="_blank"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/dialogue.online/?hl=ru"
+              target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://t.me/Dialogue_zp" target="_blank"
+              ><i class="fab fa-telegram"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>Мови</h4>
+          <ul>
+            <li><a href="english.html">Англійська</a></li>
+            <li><a href="german.html">Німецька</a></li>
+            <li><a href="spanish.html">Іспанська</a></li>
+            <li><a href="italian.html">Італійська</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Зв'яжіться з нами</h4>
+          <p><a href="tel:+380999817443">+38 099 981 74 43</a></p>
+          <p><a href="tel:+380677966470">+38 067 796 64 70</a></p>
+          <p><a href="mailto:dialogueua@gmail.com">dialogueua@gmail.com</a></p>
+        </div>
+
+        <div class="footer-сontact">
+          <h4>Адреса</h4>
+          <p>м.Запоріжжя, Україна</p>
+          <p>пр.Маяковського, 11А, 2 і 3 поверх</p>
+          <p>Пн.-Пт.: 11.00 - 20.00</p>
+          <p>Сб-Нд: Вихідний</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="assets/js/main.js"></script>
+</html>
